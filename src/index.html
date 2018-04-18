@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport " content="width = device - width, initial - scale = 1, maximum - scale = 1, minimum - scale = 1, user - scalable = no ">
+    <meta http - equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-de tection" content="telphone=no, email=no,address=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .wrap {
+            width: 100%;
+            height: 100%;
+            font-size: 0.32rem;
+        }
+        
+        header {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 5%;
+            height: 1rem;
+            background: #e7444a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header p {
+            color: #fff;
+            width: 2rem;
+            overflow: hidden;
+            /*内容超出后隐藏*/
+            text-overflow: ellipsis;
+            /* 超出内容显示为省略号*/
+            white-space: nowrap;
+            /*文本不进行换行*/
+        }
+        
+        header div.sousuo {
+            width: 65%;
+            height: 0.55rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.55rem;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        header div.sousuo i {
+            color: #e7444a;
+            font-size: 0.32rem;
+        }
+        
+        header div.sousuo input {
+            display: block;
+            width: 61%;
+            height: 90%;
+            font-size: 0.24rem;
+            color: #ccc;
+            border: none;
+            outline: none;
+        }
+        
+        .box1 {
+            width: 100%;
+            height: 1.9rem;
+            display: flex;
+        }
+        
+        .box1 dl {
+            flex: 1;
+            text-align: center;
+            margin: 0.29rem 0;
+        }
+        
+        .box1 dl img {
+            width: 0.82rem;
+            height: 0.82rem;
+        }
+        
+        .m-m {
+            width: 100%;
+        }
+        
+        .m-b {
+            width: 100%;
+        }
+        
+        .m-m h3 {
+            text-align: center;
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+        
+        .m-b h3 {
+            text-align: center;
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+        
+        .m-m li {
+            width: 20%;
+            background: #ccc;
+            height: 2.17rem;
+            text-align: center;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin: 0 0.1rem;
+        }
+        
+        .m-b li {
+            width: 30%;
+            background: #ccc;
+            height: 1.8rem;
+            text-align: center;
+            overflow: hidden;
+            margin: 0 2%;
+        }
+        
+        .m-m ul {
+            display: flex;
+            height: 2.17rem;
+            width: 180%;
+        }
+        
+        .m-b ol {
+            display: flex;
+            height: 2.17rem;
+        }
+        
+        .m-m .henggun {
+            width: 100%;
+            height: 2.17rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .m-m li h5 {
+            margin-top: 0.25rem;
+        }
+        
+        .m-m li img {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+        
+        .m-m li p {
+            font-size: 0.20rem;
+            color: #333;
+        }
+        
+        .m-b li p {
+            color: #333;
+        }
+        
+        .m-b li img {
+            width: 0.67rem;
+            height: 0.67rem;
+            margin-top: 0.25rem;
+        }
+        
+        footer {
+            width: 100%;
+            display: flex;
+        }
+        
+        footer dl {
+            flex: 1;
+            text-align: center;
+        }
+        
+        footer dl.last {
+            color: red;
+        }
+        
+        footer dl dt i.tubiao {
+            font-size: 0.48rem;
+        }
+    </style>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+
+            <p>北京八维教育jsdfjaks</p>
+            <div class="sousuo">
+                <i class="icon iconfont icon-fangdajing"></i>
+                <input type="text" placeholder="搜索你需要的服务">
+            </div>
+        </header>
+        <main>
+            <div class="m-z">
+
+                <div class="m-t swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="first swiper-slide">
+                            <div class="box1 n1">
+                                <!-- <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>-->
+                            </div>
+                            <div class="box1 n2">
+                                <!--<dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>-->
+                            </div>
+                        </div>
+                        <div class="second swiper-slide">
+                            <div class="box1 n3">
+                                <!--<dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="./img/1.jpg"></dt>
+                                    <dd>保洁</dd>
+                                </dl>-->
+                            </div>
+                            <div class="box1 n4">
+                                <!--<dl>
+                                        <dt><img src="./img/1.jpg"></dt>
+                                        <dd>保洁</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><img src="./img/1.jpg"></dt>
+                                        <dd>保洁</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><img src="./img/1.jpg"></dt>
+                                        <dd>保洁</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><img src="./img/1.jpg"></dt>
+                                        <dd>保洁</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><img src="./img/1.jpg"></dt>
+                                        <dd>保洁</dd>
+                                    </dl>-->
+                            </div>
+                        </div>
+                    </div>
+                    <span class="page swiper-pagination"></span>
+
+
+                </div>
+
+                <div class="m-m">
+                    <h3>到家精选</h3>
+                    <div class="henggun">
+                        <ul>
+                            <!--<li>
+                                <h5>djfhjdhf</h5>
+                                <p>hdsjskf</p>
+                                <img src="./img/6.jpg">
+                            </li>
+                            <li>
+                                <h5>djfhjdhf</h5>
+                                <p>hdsjskf</p>
+                                <img src="./img/6.jpg">
+                            </li>
+                            <li>
+                                <h5>djfhjdhf</h5>
+                                <p>hdsjskf</p>
+                                <img src="./img/6.jpg">
+                            </li>
+                            <li>
+                                <h5>djfhjdhf</h5>
+                                <p>hdsjskf</p>
+                                <img src="./img/6.jpg">
+                            </li>
+                            <li>
+                                <h5>djfhjdhf</h5>
+                                <p>hdsjskf</p>
+                                <img src="./img/6.jpg">
+                            </li>
+                            <li>
+                                <h5>djfhjdhf</h5>
+                                <p>hdsjskf</p>
+                                <img src="./img/6.jpg">
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="m-b">
+                    <h3>立即上门</h3>
+                    <ol>
+                        <!--<li>
+                            <img src="./img/8.jpg">
+                            <p>电脑维修</p>
+                        </li>
+                        <li>
+                            <img src="./img/8.jpg">
+                            <p>电脑维修</p>
+                        </li>
+                        <li>
+                            <img src="./img/8.jpg">
+                            <p>电脑维修</p>
+                        </li>
+                        <li>
+                            <img src="./img/8.jpg">
+                            <p>电脑维修</p>
+                        </li>-->
+                    </ol>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <dl class="last">
+                <dt> <i class="icon iconfont icon-shouye tubiao"></i></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt> <i class="icon iconfont icon-shouye tubiao"></i></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt> <i class="icon iconfont icon-shouye tubiao"></i></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt> <i class="icon iconfont icon-shouye tubiao"></i></dt>
+                <dd>首页</dd>
+            </dl>
+        </footer>
+    </div>
+    <script src="./js/require.js" data-main="./js/main" async="true" defer></script>
+    <script type="text/x-handlebars-template" id="sco">
+        {{#each this}}
+        <dl>
+            <dt><img src="{{img}}"></dt>
+            <dd>{{p}}</dd>
+        </dl>
+        {{/each}}
+    </script>
+    <script type="text/x-handlebars-template" id="sco2">
+        {{#each this}}
+        <dl>
+            <dt><img src="{{img}}"></dt>
+            <dd>{{p}}</dd>
+        </dl>
+        {{/each}}
+
+    </script>
+
+    <script type="text/x-handlebars-template" id="sco3">
+        {{#each this}}
+        <dl>
+            <dt><img src="{{img}}"></dt>
+            <dd>{{p}}</dd>
+        </dl>
+        {{/each}}
+
+    </script>
+    <script type="text/x-handlebars-template" id="sco4">
+        {{#each this}}
+        <dl>
+            <dt><img src="{{img}}"></dt>
+            <dd>{{p}}</dd>
+        </dl>
+        {{/each}}
+
+    </script>
+
+    <script type="text/x-handlebars-template" id="sco5">
+        {{#each this}}
+        <li>
+            <h5>{{h1}}</h5>
+            <p>{{p}}</p>
+            <img src="{{img}}">
+        </li>
+        {{/each}}
+
+    </script>
+
+    <script type="text/x-handlebars-template" id="sco6">
+        {{#each this}}
+        <li>
+            <img src="{{img}}">
+            <p>{{p}}</p>
+        </li>
+        {{/each}}
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
